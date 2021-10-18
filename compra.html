@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cine Bosco</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="js/compra.js"></script>
+</head>
+<body>
+<div class="todo">
+	<header>
+	    <h1 class="title">Cine Bosco</h1>
+	</header>
+	<article>
+		<form name="regestryform">
+			<fieldset id="myform">
+			<legend>Factura</legend>
+			<ul class="formset">
+			    <div>
+			        <label for="name">Película:</label>
+			        <input type="text" name="name" id="name" placeholder="Película a ver" />
+			    </div><br>
+			    <div>
+			        <label for="age">Tickets:</label>
+			        <input type="number" name="age" id="age" placeholder="Cantidad de Tickets" />   
+			    </div><br>
+			    <div>
+			        <input type="button" id="add" value="Comprar" onclick="Javascript:save()">
+			        <input type="button" id="get" value="Obtener" onclick="Javascript:obtain()">
+			       
+			        <input type="button" id="clear" value="Limpiar" onclick="Javascript:clearStorage()">
+			    </div><br>
+			    <div>
+			        <input type="button" id="restoreC" value="Factura" onclick="Javascript:restoreComplexData()">
+			       	<a href="index.html">Inicio</a>
+			    </div>
+			</ul>
+			</fieldset>
+		</form>
+		<div id="state"></div>
+
+	</article>
+	
+	
+</div>
+</body>
+</html>
